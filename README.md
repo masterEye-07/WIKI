@@ -33,20 +33,15 @@
 ### 5. Get the sign information from each node
 - sign infomation is: EnodeID@IP:PORT + hex.EncodeToString(crypto.Sign(crypto.Keccak256(EnodeID), privateKey))
 ```
-./build/bin/gsmpc-client -cmd EnodeSig -url http://127.0.0.1:5871 --keystore
-~/Downloads/UTC--2018-10-11T01-26-58.462416324Z--3a1b3b81ed061581558a81f11d63e03129347437 --passwdfile ~/Downloads/passwdfile1
+./build/bin/gsmpc-client -cmd EnodeSig -url http://127.0.0.1:5871 --keystore ./test/keystore/UTC--2018-10-11T01-26-58.462416324Z--3a1b3b81ed061581558a81f11d63e03129347437 --passwdfile ./test/passwdfile/passwdfile1
 
-./build/bin/gsmpc-client -cmd EnodeSig -url http://127.0.0.1:5872 --keystore
-~/Downloads/UTC--2019-03-11T08-42-59.809814178Z--a0f15f85b7a24b66f1d682b7244242093ec4430d --passwdfile ~/Downloads/passwdfile2
+./build/bin/gsmpc-client -cmd EnodeSig -url http://127.0.0.1:5872 --keystore ./test/keystore/UTC--2019-03-11T08-42-59.809814178Z--a0f15f85b7a24b66f1d682b7244242093ec4430d --passwdfile ./test/passwdfile/passwdfile2
 
-./build/bin/gsmpc-client -cmd EnodeSig -url http://127.0.0.1:5873 --keystore
-~/Downloads/UTC--2019-03-11T06-23-44.238608862Z--ecf880e334de65cd32a63b7b7567797ed707583b --passwdfile ~/Downloads/passwdfile3
+./build/bin/gsmpc-client -cmd EnodeSig -url http://127.0.0.1:5873 --keystore ./test/keystore/UTC--2019-03-11T06-23-44.238608862Z--ecf880e334de65cd32a63b7b7567797ed707583b --passwdfile ./test/passwdfile/passwdfile3
 
-./build/bin/gsmpc-client -cmd EnodeSig -url http://127.0.0.1:5874 --keystore
-~/Downloads/UTC--2019-03-11T06-20-19.810771134Z--88525df23a7f1b3b549bcfd997ce8160ac7976a9 --passwdfile ~/Downloads/passwdfile4
+./build/bin/gsmpc-client -cmd EnodeSig -url http://127.0.0.1:5874 --keystore ./test/keystore/UTC--2019-03-11T06-20-19.810771134Z--88525df23a7f1b3b549bcfd997ce8160ac7976a9 --passwdfile ./test/passwdfile/passwdfile4
 
-./build/bin/gsmpc-client -cmd EnodeSig -url http://127.0.0.1:5875 --keystore
-~/Downloads/UTC--2018-10-12T11-33-28.769681948Z--0963a18ea497b7724340fdfe4ff6e060d3f9e388 --passwdfile ~/Downloads/passwdfile5
+./build/bin/gsmpc-client -cmd EnodeSig -url http://127.0.0.1:5875 --keystore ./test/keystore/UTC--2018-10-12T11-33-28.769681948Z--0963a18ea497b7724340fdfe4ff6e060d3f9e388 --passwdfile ./test/passwdfile/passwdfile5
 ```
 
 ### 6. Request for generating public key
