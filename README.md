@@ -109,15 +109,14 @@ Recover from address = 0x3A1b3B81Ed061581558a81F11d63E03129347437
 ```
 
 ### 11. Get the co-managed public key by the key of generating pubkey key request
--Response:
 
-Type":application/json --data '{"jsonrpc":"2.0","method":"smpc_getSignStatus","params":["0x8c139ef6b57368eab886e85a6b88fa52fabafef2ed940e2c359f10e7668fc7d3"],"id":67}' http://127.0.0.1:5871
-{"jsonrpc":"2.0","id":67,"result":{"Data":{"result":"{\"KeyID\":\"0x8c139ef6b57368eab886e85a6b88fa52fabafef2ed940e2c359f10e7668fc7d3\",\"From\":\"0x3A1b3B81Ed061581558a81F11d63E03129347437\",\"GroupID\":\"13fb8a42c696c78e15d874d58bde864ef861d7b30a5a6cab4bd4174a20768a87f5b345c2c86f646224a663dfa6ca6127ce911481ccf37ee7765afd8e335c832c\",\"ThresHold\":\"3/5\",\"MsgHash\":[\"0x90e032be062dd0dc689fa23df8c044936a2478cb602b292c7397354238a67d88\"],\"MsgContext\":[\"{\\\"swapInfo\\\":{\\\"swapid\\\":\\\"0x4f62545cdd05cc346c75bb42f685a18a02621e91512e0806eac528d0b2f6aa5f\\\",\\\"swaptype\\\":1,\\\"bind\\\":\\\"0x0520e8e5e08169c4dbc1580dc9bf56638532773a\\\",\\\"identifier\\\":\\\"ssUSDT2FSN\\\"},\\\"extra\\\":{\\\"ethExtra\\\":{\\\"gas\\\":90000,\\\"gasPrice\\\":1000000000,\\\"nonce\\\":1}}}\"],\"Status\":\"Success\",\"Rsv\":[\"09875B2B14D398CBFB67327BC4130266B56F4A6443B00D5BD013D9DBF097C5833E479D0F94256C0F905582F7C3EF090A62002F654F0F0E9672A08FDD5A7D9D8E01\"],\"Tip\":\"\",\"Error\":\"\",\"AllReply\":[{\"Enode\":\"a4bf71e29738fc406b7d5d8388a553e22baa829dd015f7fdfb9780a40c54db0381eba6857467d32bb3b30cb3609217b50a80664946538711b87c66f77ef90d8c\",\"Approver\":\"0x3A1b3B81Ed061581558a81F11d63E03129347437\",\"Status\":\"AGREE\",\"TimeStamp\":\"1692772528089\",\"Initiator\":\"0\"},{\"Enode\":\"85c45e2a409233ae37111b753f9075930eb5485e01681949a55ad84c900bb64506fa31493fa6081698c28179c9c444febf287d9433a6552a7daed96eb8197343\",\"Approver\":\"0xa0F15f85B7a24B66F1d682b7244242093EC4430D\",\"Status\":\"AGREE\",\"TimeStamp\":\"1692772545120\",\"Initiator\":\"0\"},{\"Enode\":\"ed0f97089b78f1dcb2aa2931f6b7c38f23893a302b5bcb1f8a213983faffe20b1a6bd2f61ba330f5c2ffb3165078a3616be765de456a7e5f1a6171dd66cc3e67\",\"Approver\":\"0xECF880E334De65CD32a63B7b7567797Ed707583b\",\"Status\":\"AGREE\",\"TimeStamp\":\"1692772562488\",\"Initiator\":\"1\"}],\"TimeStamp\":\"1692772198232\",\"Initiator\":\"ed0f97089b78f1dcb2aa2931f6b7c38f23893a302b5bcb1f8a213983faffe20b1a6bd2f61ba330f5c2ffb3165078a3616be765de456a7e5f1a6171dd66cc3e67\",\"PubKey\":\"04e49cfec91f773d4a20ac13bd2790598501903b9c285b5890c134073f2a0a994795aaa84d3f0aeacff30386cf8f013f202c91025473013f17187e6e1e48d83e83\",\"Keytype\":\"EC256K1\",\"Mode\":\"0\",\"FixedApprover\":null,\"Comment\":\"\"}"},"Error":"","Status":"Success","Tip":""}}
 ```
 curl -X POST -H "Content-Type":application/json --data '{"jsonrpc":"2.0","method":"smpc_getReqAddrStatus","params":["0x99eb5c871ce7dc1a2dfd22339c9266894b3fb7aebe2e7a97a6db16b7f2b0e095"],"id":67}' http://127.0.0.1:5871
 ```
 
 ### 12. Get the sign result (rsv) by the key of signing request
+-Response:
+RSV = 09875B2B14D398CBFB67327BC4130266B56F4A6443B00D5BD013D9DBF097C5833E479D0F94256C0F905582F7C3EF090A62002F654F0F0E9672A08FDD5A7D9D8E01
 ```
 curl -X POST -H "Content-Type":application/json --data '{"jsonrpc":"2.0","method":"smpc_getSignStatus","params":["0x32f14e52cac59c85077d238b4d06ab755fcbb3037e79b5d76a6f76950d1b300b"],"id":67}' http://127.0.0.1:5871
 ```
