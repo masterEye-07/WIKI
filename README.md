@@ -22,7 +22,7 @@ UDP listener up, self enode://42765ed09e22140e40c94be766173c601c88e97362c14c77e8
 
 ### 3. Create group id containing 5 nodes
 - example:
-- Gid = b0991607cc62ab84404ec2dfddf15f85452c5a8c190302e62f473570a57bdb9ba0609f84e60eb5b13046080bcb45f0003743f2f2807efd1bc53073649b1d79d3
+Gid = b0991607cc62ab84404ec2dfddf15f85452c5a8c190302e62f473570a57bdb9ba0609f84e60eb5b13046080bcb45f0003743f2f2807efd1bc53073649b1d79d3
 ```
 ./build/bin/gsmpc-client -cmd SetGroup -url http://127.0.0.1:5871 -ts 3/5 -node http://127.0.0.1:5871 -node http://127.0.0.1:5872 -node http://127.0.0.1:5873 -node http://127.0.0.1:5874 -node http://127.0.0.1:5875
 ```
