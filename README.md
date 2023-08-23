@@ -1,10 +1,9 @@
 ### 1. Start bootnode and get the bootnode key that will be used for parameter --bootnodes
+- example: 9fffdd35e5570f1a14d9b091a4d81c8fe9750536f6b8e5b9ab9591d8d75f4248b14b49f4a2be2b285a7f5155085b92d5fbdedfcf877492d038039555d93bbd8f
 ```
 ./build/bin/bootnode --genkey=boot.key
 ./build/bin/bootnode --nodekey=boot.key
 ```
-- example: 9fffdd35e5570f1a14d9b091a4d81c8fe9750536f6b8e5b9ab9591d8d75f4248b14b49f4a2be2b285a7f5155085b92d5fbdedfcf877492d038039555d93bbd8f
-
 ### 2. Start 5 mpc nodes
 ```
 ./build/bin/gsmpc --rpcport 5871 --bootnodes "enode://d13ff378464867d4ebef8774c55fb053dfafc97141ad04ad9710d96afff619ba9751c17444b416805cda8eb70f7e3bfd1f1eb1b65c7799a74b38e141c066ad65@127.0.0.1:4440" --port 48541 --nodekey "node1.key" --verbosity 5 --nonetrestrict=false 2>&1 | tee node1.log
