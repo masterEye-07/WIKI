@@ -78,6 +78,13 @@ key ID = 0xd0794019530761cb13c45b7a564a27dbcf325676be26d972e67f7354e4f268cf
 ./build/bin/gsmpc-client -cmd ACCEPTREQADDR  -url http://127.0.0.1:5875 --keystore ./test/keystore/UTC--2018-10-12T11-33-28.769681948Z--0963a18ea497b7724340fdfe4ff6e060d3f9e388 --passwdfile ./test/passwdfile/passwdfile5 -key 0x3628959e323c100b4f0c098f33bcbd5c381b72489565561b22605e1b08531074 --keytype EC256K1 -msgsig=true -mode 0
 ```
 
+### 7.1. Get Public Key from CURL Response
+
+```
+curl -X POST -H "Content-Type":application/json --data '{"jsonrpc":"2.0","method":"smpc_getReqAddrStatus","params":["0x3628959e323c100b4f0c098f33bcbd5c381b72489565561b22605e1b08531074"],"id":67}' http://127.0.0.1:5871  --noproxy 127.0.0.1 
+```
+PubKey = 0463d86d7400ff5d8ed228be11200e1e7dff7c52e345768dd0a95b4441bd56615b17a621e8ac2d1cbadee08423f7e50d93569c98c9175982114ec6ac91759af6ae
+
 ### 8. Pre-generated sign data
 - mode = 2 does not need to be pre generated or automatically pre generated. Other mode values need to do this.
 - if ed, skip this step.
