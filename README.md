@@ -3,6 +3,7 @@
 ./build/bin/bootnode --genkey=boot.key
 ./build/bin/bootnode --nodekey=boot.key
 ```
+- example: 9fffdd35e5570f1a14d9b091a4d81c8fe9750536f6b8e5b9ab9591d8d75f4248b14b49f4a2be2b285a7f5155085b92d5fbdedfcf877492d038039555d93bbd8f
 
 ### 2. Start 5 mpc nodes
 ```
