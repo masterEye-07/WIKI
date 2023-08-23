@@ -7,8 +7,6 @@ UDP listener up, self enode://42765ed09e22140e40c94be766173c601c88e97362c14c77e8
 ./build/bin/bootnode --nodekey=boot.key
 ```
 ### 2. Start 5 mpc nodes
-- example:
-Gid = b0991607cc62ab84404ec2dfddf15f85452c5a8c190302e62f473570a57bdb9ba0609f84e60eb5b13046080bcb45f0003743f2f2807efd1bc53073649b1d79d3
 ```
 ./build/bin/gsmpc --rpcport 5871 --bootnodes "enode://d13ff378464867d4ebef8774c55fb053dfafc97141ad04ad9710d96afff619ba9751c17444b416805cda8eb70f7e3bfd1f1eb1b65c7799a74b38e141c066ad65@127.0.0.1:4440" --port 48541 --nodekey "node1.key" --verbosity 5 --nonetrestrict=false 2>&1 | tee node1.log
 
@@ -23,7 +21,8 @@ Gid = b0991607cc62ab84404ec2dfddf15f85452c5a8c190302e62f473570a57bdb9ba0609f84e6
 
 
 ### 3. Create group id containing 5 nodes
-- example: 9fffdd35e5570f1a14d9b091a4d81c8fe9750536f6b8e5b9ab9591d8d75f4248b14b49f4a2be2b285a7f5155085b92d5fbdedfcf877492d038039555d93bbd8f
+- example:
+- Gid = b0991607cc62ab84404ec2dfddf15f85452c5a8c190302e62f473570a57bdb9ba0609f84e60eb5b13046080bcb45f0003743f2f2807efd1bc53073649b1d79d3
 ```
 ./build/bin/gsmpc-client -cmd SetGroup -url http://127.0.0.1:5871 -ts 3/5 -node http://127.0.0.1:5871 -node http://127.0.0.1:5872 -node http://127.0.0.1:5873 -node http://127.0.0.1:5874 -node http://127.0.0.1:5875
 ```
