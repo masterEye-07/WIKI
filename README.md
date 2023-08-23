@@ -115,7 +115,7 @@ curl -X POST -H "Content-Type":application/json --data '{"jsonrpc":"2.0","method
 ```
 
 ### 12. Get the sign result (rsv) by the key of signing request
--Response:
+- Response:
 RSV = 09875B2B14D398CBFB67327BC4130266B56F4A6443B00D5BD013D9DBF097C5833E479D0F94256C0F905582F7C3EF090A62002F654F0F0E9672A08FDD5A7D9D8E01
 ```
 curl -X POST -H "Content-Type":application/json --data '{"jsonrpc":"2.0","method":"smpc_getSignStatus","params":["0x32f14e52cac59c85077d238b4d06ab755fcbb3037e79b5d76a6f76950d1b300b"],"id":67}' http://127.0.0.1:5871
