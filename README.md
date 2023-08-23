@@ -1,12 +1,11 @@
 ### 1. Start bootnode and get the bootnode key that will be used for parameter --bootnodes
-- example:
-UDP listener up, self enode://42765ed09e22140e40c94be766173c601c88e97362c14c77e815394b9d77a0fd486763ceebb51c196569fed8873b4a5ae42cb3e887216d0515112f2236fbf0ed@[::]:4440
+
 ```
 ./build/bin/bootnode --genkey=boot.key
 ./build/bin/bootnode --nodekey=boot.key
 ```
+enode://42765ed09e22140e40c94be766173c601c88e97362c14c77e815394b9d77a0fd486763ceebb51c196569fed8873b4a5ae42cb3e887216d0515112f2236fbf0ed@[::]:4440
 
-4440
 ### 2. Start 5 mpc nodes
 ```
 ./build/bin/gsmpc --rpcport 5871 --bootnodes "enode://d13ff378464867d4ebef8774c55fb053dfafc97141ad04ad9710d96afff619ba9751c17444b416805cda8eb70f7e3bfd1f1eb1b65c7799a74b38e141c066ad65@127.0.0.1:4440" --port 48541 --nodekey "node1.key" --verbosity 5 --nonetrestrict=false 2>&1 | tee node1.log
