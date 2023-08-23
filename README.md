@@ -1,5 +1,10 @@
 ### 1. Start bootnode and get the bootnode key that will be used for parameter --bootnodes
-- example: 9fffdd35e5570f1a14d9b091a4d81c8fe9750536f6b8e5b9ab9591d8d75f4248b14b49f4a2be2b285a7f5155085b92d5fbdedfcf877492d038039555d93bbd8f
+- example:
+ nodeKeyFile: , listenAddr: :4440
+- example:
+ nodeKeyFile: boot.key, listenAddr: :4440                                                                                     ae42cb3e887216d0515112f22
+
+UDP listener up, self enode://42765ed09e22140e40c94be766173c601c88e97362c14c77e815394b9d77a0fd486763ceebb51c196569fed8873b4a5ae42cb3e887216d0515112f2236fbf0ed@[::]:4440
 ```
 ./build/bin/bootnode --genkey=boot.key
 ./build/bin/bootnode --nodekey=boot.key
